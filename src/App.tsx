@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import AppShell from './components/layout/AppShell';
+import LoginPage from './features/auth/LoginPage';
 import HomePage from './features/home/HomePage';
 import RegionPage from './features/region/RegionPage';
 import WritePage from './features/ads/WritePage';
@@ -11,6 +12,9 @@ import MyPage from './features/profile/MyPage';
 export default function App() {
   return (
     <Routes>
+      {/* 로그인 화면은 하단 메뉴 없이 전체 화면으로 보여줍니다. */}
+      <Route path="login" element={<LoginPage />} />
+
       <Route element={<AppShell />}>
         <Route index element={<HomePage />} />
         <Route path="region" element={<RegionPage />} />
