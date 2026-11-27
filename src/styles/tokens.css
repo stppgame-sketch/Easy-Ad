@@ -1,0 +1,40 @@
+/* 디자인 기준값(색, 둥글기, 그림자). 색을 바꾸고 싶으면 이 파일만 고칩니다. */
+:root {
+  color-scheme: light;
+
+  --blue-700: #1556c0;
+  --blue-600: #1f6feb;
+  --blue-500: #3b82f6;
+  --blue-100: #e3eeff;
+  --blue-50: #f2f7ff;
+
+  --yellow-500: #ffb800;
+  --yellow-400: #ffc93c;
+  --yellow-100: #fff3cb;
+
+  --pink-100: #ffe4ec;
+  --mint-100: #ddf5e8;
+  --lavender-100: #ece6ff;
+  --peach-100: #ffe9d9;
+  --sky-100: #dcebff;
+
+  --ink: #1b2a41;
+  --ink-soft: #5e6e86;
+  --ink-faint: #8795ab;
+  --line: #e2eaf6;
+  --surface: #ffffff;
+
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 6px 20px rgba(31, 111, 235, 0.1);
+  --shadow-nav: 0 -6px 24px rgba(31, 111, 235, 0.12);
+
+  --font: 'Pretendard Variable', 'Pretendard', 'Apple SD Gothic Neo',
+    'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif;
+
+  --shell-max: 480px;
+  --nav-h: 64px;
+}

@@ -1,0 +1,18 @@
+.app {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  max-width: var(--shell-max);
+  min-height: 100dvh;
+  background: var(--blue-50);
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.main {
+  padding-bottom: calc(var(--nav-h) + 32px + env(safe-area-inset-bottom, 0px));
+}

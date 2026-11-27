@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(14px + env(safe-area-inset-top, 0px)) 16px 8px;
+}
+
+.region {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px 6px 4px;
+  border-radius: var(--radius-pill);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.region svg:first-child {
+  color: var(--blue-600);
+}
+
+.regionName {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.actions {
+  display: flex;
+  gap: 4px;
+}
+
+.iconButton {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.iconButton:disabled {
+  color: var(--ink-faint);
+  cursor: not-allowed;
+}

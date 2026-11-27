@@ -1,0 +1,28 @@
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 4px 16px 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  flex: none;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tab[aria-selected='true'] {
+  border-color: var(--blue-600);
+  background: var(--blue-600);
+  color: #fff;
+}
