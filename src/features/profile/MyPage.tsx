@@ -1,5 +1,6 @@
 import PlaceholderPage from '../../components/ui/PlaceholderPage';
 import { env } from '../../lib/env';
+import ConnectionCheck from './ConnectionCheck';
 
 export default function MyPage() {
   return (
@@ -9,6 +10,7 @@ export default function MyPage() {
         icon="user"
         description="프로필, 포인트, 내 광고를 관리하는 화면이에요. 로그인 단계에서 만들어요."
       />
+      <ConnectionCheck />
       <p style={{ textAlign: 'center', marginTop: 20, fontSize: 12, color: 'var(--ink-faint)' }}>
         앱 버전 {env.appVersion}
       </p>
